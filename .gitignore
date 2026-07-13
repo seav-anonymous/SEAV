@@ -25,5 +25,9 @@ logs/
 *.jsonl
 *.json
 
-# Datasets
-datasets/
+# Datasets are ignored by default. OrdSense is the documented release exception.
+datasets/*
+!datasets/ordsense/
+datasets/ordsense/*
+!datasets/ordsense/README.md
+!datasets/ordsense/order_variants_with_responses.jsonl
